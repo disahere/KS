@@ -29,7 +29,7 @@ public class Move : MonoBehaviour
 
         var horizontal = Input.GetAxis("Horizontal");
         if (horizontal != 0)
-            transform.localScale = new Vector3(Mathf.Sign(horizontal), 1f, 1f);
+            transform.localScale = new Vector3(Mathf.Sign(-horizontal), 1f, 1f);
 
         #endregion
     }

@@ -1,1 +1,11 @@
 /Library
+*.backup
+*.xml
+.idea/.idea.KS/.idea/workspace.xml
+Temp/UnityLockfile
+Temp/FSTimeGet-c31ba8eb28042e64cbdf341f147af639
+Temp/FSTimeGet-add73f445ef3d4148a742d2edc4e3533
+Temp/FSTimeGet-5575ee3abeef09343ab309ef59aababb
+Temp/FSTimeGet-443be1fdb7e64cb41a65011adc5a7d9a
+Temp/FSTimeGet-32f3c6d6ea02fb44a89d94e016b65824
+Temp/FSTimeGet-0929bba1c4f1c704fbb5da45de50b58c

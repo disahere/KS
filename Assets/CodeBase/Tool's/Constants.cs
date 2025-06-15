@@ -12,6 +12,7 @@
 
     public const string CLASS_JumpyTripline = "JumpyTripline";
     public const string CLASS_Loader = "Loader";
+    public const string CLASS_Menu = "Menu";
 
     #endregion
 
@@ -25,7 +26,7 @@
 
     #region Cooldown
 
-    public const float GameCheckCooldown = 0.5f;
+    public const float GameCheckCooldown = 1f;
 
     #endregion
   }

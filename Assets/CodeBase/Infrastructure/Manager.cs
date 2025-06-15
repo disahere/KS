@@ -7,8 +7,11 @@ namespace CodeBase.Infrastructure
 {
   public class Manager : MonoBehaviour
   {
-    private Game _game;
-    private Loader _loader;
+    protected Game Game;
+    protected Loader Loader;
+    protected Menu Menu;
+    
+    protected readonly bool IsDebug = true;
     
     public static Manager Instance { get; private set; }
 
@@ -34,11 +37,14 @@ namespace CodeBase.Infrastructure
 
     private void RegisterAllComponents()
     {
-      if(!_game)
-        _game = GetComponentInChildren<Game>();
+      if(!Game)
+        Game = GetComponentInChildren<Game>();
 
-      if (!_loader)
-        _loader = GetComponentInChildren<Loader>();
+      if (!Loader)
+        Loader = GetComponentInChildren<Loader>();
+
+      if (!Menu)
+        Menu = GetComponentInChildren<Menu>();
     }
 
     private IEnumerator CheckActiveScene()
@@ -47,7 +53,10 @@ namespace CodeBase.Infrastructure
       
       if (SceneManager.GetActiveScene().name == Constants.SCENE_Bootstrap)
       {
-        _loader.LoadSelectedScene(Constants.SCENE_Menu);
+        if (Loader) 
+          Loader.LoadSelectedScene(Constants.SCENE_Menu);
+        if (Menu)
+          Menu.MenuUI(true);
       }
     }
   }

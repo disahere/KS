@@ -13,12 +13,12 @@ namespace CodeBase._GAME
     private void OnTriggerEnter2D(Collider2D other)
     {
       if (IsDebug) 
-        SmartDebug.Log(Constants.CLASS_JumpyTripline, "On Trigger Enter");
+        SmartDebug.GameLog(Constants.CLASS_JumpyTripline, "On Trigger Enter");
       
       if (!other.CompareTag(Constants.TAGS_Player) || !_isReadyToBounce) return;
     
       if (IsDebug)
-        SmartDebug.Log(Constants.CLASS_JumpyTripline, "Player contact with tripline");
+        SmartDebug.GameLog(Constants.CLASS_JumpyTripline, "Player contact with tripline");
     
       var rb = other.GetComponent<Rigidbody2D>();
       if (!rb) return;

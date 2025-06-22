@@ -8,27 +8,31 @@ namespace CodeBase.Infrastructure
   {
     [Header("Panel's")] 
     [SerializeField] private GameObject menuPanel;
+    [SerializeField] private GameObject gamePanel;
 
     [Header("Button's")] 
     [SerializeField] private Button startGame;
 
-    private Loader _loader;
+    [Header("Loader's")]
+    [SerializeField] private Loader loader;
+    
     private SmartDebug _smartDebug;
     
     private void Awake()
     {
       MenuUI(false);
-      _loader = FindObjectOfType<Loader>();
+      GameUI(false);
       SmartDebug = new SmartDebug();
     }
 
     private void Start()
     {
       startGame.onClick.AddListener(() => {
-        if (_loader)
+        if (loader)
         {
-          _loader.LoadSelectedScene(Constants.SCENE_Game);
+          loader.LoadSelectedScene(Constants.SCENE_Game);
           MenuUI(false);
+          GameUI(true);
         }
       });
     }
@@ -36,6 +40,11 @@ namespace CodeBase.Infrastructure
     public void MenuUI(bool isActive)
     {
       menuPanel.gameObject.SetActive(isActive);
+    }
+    
+    public void GameUI(bool isActive)
+    {
+      gamePanel.gameObject.SetActive(isActive);
     }
   }
 }

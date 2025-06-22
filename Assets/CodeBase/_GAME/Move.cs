@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 namespace CodeBase._GAME
@@ -14,8 +13,10 @@ namespace CodeBase._GAME
     private bool _isGrounded;
     private readonly float _groundRadius = 0.2f;
 
-    private void Start() =>
-      _rb = GetComponent<Rigidbody2D>();
+    private void Start() => 
+      InitComp();
+
+    private void InitComp() => _rb = GetComponent<Rigidbody2D>();
 
     private void Update()
     {
@@ -35,15 +36,6 @@ namespace CodeBase._GAME
         transform.localScale = new Vector3(Mathf.Sign(-horizontal), 1f, 1f);
 
       #endregion
-    }
-
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-      if (other.gameObject.CompareTag("Coin"))
-      {
-        Debug.Log("Collected coin");
-        Destroy(other.gameObject);
-      }
     }
 
     private void FixedUpdate()

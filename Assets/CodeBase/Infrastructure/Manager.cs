@@ -8,12 +8,15 @@ namespace CodeBase.Infrastructure
   public class Manager : MonoBehaviour
   {
     protected Game Game;
-    protected Loader Loader;
-    protected Menu Menu;
+    public Loader Loader;
+    public Menu Menu;
     
-    protected readonly bool IsDebug = true;
+    public bool IsDebug = true;
     
     public static Manager Instance { get; private set; }
+
+    private SmartDebug _smartDebug;
+    
 
     private void Awake()
     {
@@ -37,8 +40,14 @@ namespace CodeBase.Infrastructure
 
     private void RegisterAllComponents()
     {
-      if(!Game)
+      _smartDebug = new SmartDebug();
+
+      if (!Game)
+      {
         Game = GetComponentInChildren<Game>();
+        _smartDebug.WarnLog(Constants.CLASS_Manager,
+          "Game component was get from children object");
+      }
 
       if (!Loader)
         Loader = GetComponentInChildren<Loader>();

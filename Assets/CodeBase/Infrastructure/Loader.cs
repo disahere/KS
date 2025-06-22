@@ -8,7 +8,8 @@ namespace CodeBase.Infrastructure
     public void LoadSelectedScene(string sceneName)
     {
       SceneManager.LoadScene(sceneName);
-      SmartDebug.Log(Constants.CLASS_Loader, $"Loading scene: {sceneName} started!");
+      if (IsDebug)
+        SmartDebug.SystemLog(Constants.CLASS_Loader, $"Loading scene: {sceneName} started!");
     }
   }
 }

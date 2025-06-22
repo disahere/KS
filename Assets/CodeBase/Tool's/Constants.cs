@@ -5,6 +5,7 @@
     #region Tag's
 
     public const string TAGS_Player = "Player";
+    public const string TAGS_Cristal = "Cristal";
 
     #endregion
 
@@ -13,6 +14,7 @@
     public const string CLASS_JumpyTripline = "JumpyTripline";
     public const string CLASS_Loader = "Loader";
     public const string CLASS_Menu = "Menu";
+    public const string CLASS_Manager = "Manager";
 
     #endregion
 
@@ -27,6 +29,12 @@
     #region Cooldown
 
     public const float GameCheckCooldown = 1f;
+
+    #endregion
+
+    #region Value's
+
+    public const int GameDefaultCoinValue = 0;
 
     #endregion
   }

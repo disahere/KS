@@ -58,8 +58,8 @@ namespace CodeBase.Infrastructure
       
       if (SceneManager.GetActiveScene().name == Constants.SCENE_Bootstrap)
       {
-        if (Loader) 
-          Loader.LoadSelectedScene(Constants.SCENE_Menu);
+        // if (Loader) 
+        //   Loader.LoadSelectedScene(Constants.SCENE_Menu);
         if (Menu)
           Menu.MenuUI(true);
       }

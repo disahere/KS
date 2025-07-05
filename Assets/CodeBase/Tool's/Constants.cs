@@ -15,6 +15,8 @@
     public const string CLASS_Loader = "Loader";
     public const string CLASS_Menu = "Menu";
     public const string CLASS_Manager = "Manager";
+    public const string CLASS_Auth = "Auth";
+    public const string CLASS_Connection = "Connection";
 
     #endregion
 

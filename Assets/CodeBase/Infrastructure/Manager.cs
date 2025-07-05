@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using _Code.Tools.SmartDebug;
 using CodeBase.Tool_s;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -7,17 +8,12 @@ namespace CodeBase.Infrastructure
 {
   public class Manager : MonoBehaviour
   {
-    protected Game Game;
-    public Loader Loader;
-    public Menu Menu;
-    
-    public bool IsDebug = true;
+    [SerializeField] private Game Game;
+    [SerializeField] private Loader Loader;
+    [SerializeField] private Menu Menu;
     
     public static Manager Instance { get; private set; }
-
-    private SmartDebug _smartDebug;
     
-
     private void Awake()
     {
       if (Instance && Instance != this)
@@ -40,13 +36,13 @@ namespace CodeBase.Infrastructure
 
     private void RegisterAllComponents()
     {
-      _smartDebug = new SmartDebug();
-
       if (!Game)
       {
         Game = GetComponentInChildren<Game>();
-        _smartDebug.WarnLog(Constants.CLASS_Manager,
-          "Game component was get from children object");
+        DLogger.Message(DSenders.Assets)
+          .WithText($"{Constants.CLASS_Manager} Game component was get from children object".Bold())
+          .WithFormat(DebugFormat.Normal)
+          .Log();
       }
 
       if (!Loader)

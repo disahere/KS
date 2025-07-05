@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 namespace CodeBase.Infrastructure
 {
-  public class Menu : Game
+  public class Menu : MonoBehaviour
   {
     [Header("Panel's")] 
     [SerializeField] private GameObject menuPanel;
@@ -16,13 +16,10 @@ namespace CodeBase.Infrastructure
     [Header("Loader's")]
     [SerializeField] private Loader loader;
     
-    private SmartDebug _smartDebug;
-    
     private void Awake()
     {
       MenuUI(false);
       GameUI(false);
-      SmartDebug = new SmartDebug();
     }
 
     private void Start()

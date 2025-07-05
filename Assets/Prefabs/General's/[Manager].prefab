@@ -248,9 +248,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 350d920a935d4cbea17a018b58a9635c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Loader: {fileID: 0}
-  Menu: {fileID: 0}
-  IsDebug: 1
 --- !u!1 &1637651822049772910
 GameObject:
   m_ObjectHideFlags: 0
@@ -568,10 +565,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1468fac016704e24a9689b92910e164d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Loader: {fileID: 4909992458401805145}
-  Menu: {fileID: 4974596133298805932}
-  IsDebug: 1
   cristalTarget: 3
+  loader: {fileID: 4909992458401805145}
+  menu: {fileID: 4974596133298805932}
 --- !u!1 &2180242273087886794
 GameObject:
   m_ObjectHideFlags: 0
@@ -752,9 +748,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fe36ba7a0b74f0694ad2302c3e9a60c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Loader: {fileID: 0}
-  Menu: {fileID: 0}
-  IsDebug: 1
 --- !u!1 &3222478030236076575
 GameObject:
   m_ObjectHideFlags: 0
@@ -1652,9 +1645,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b476c52b97c43fe895000d3a646f583, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Loader: {fileID: 0}
-  Menu: {fileID: 0}
-  IsDebug: 1
+  Game: {fileID: 134514093593985165}
+  Loader: {fileID: 4909992458401805145}
+  Menu: {fileID: 4974596133298805932}
 --- !u!1 &8728145417560911936
 GameObject:
   m_ObjectHideFlags: 0
@@ -1875,9 +1868,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec8dae2ec4004005999e082dd6928654, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Loader: {fileID: 0}
-  Menu: {fileID: 0}
-  IsDebug: 1
   menuPanel: {fileID: 5205244717441583408}
   gamePanel: {fileID: 4256515322686634789}
   startGame: {fileID: 235632293810826507}

@@ -4,10 +4,13 @@ using UnityEngine;
 
 namespace CodeBase._GAME
 {
-  public class GameManager : Game
+  public class GameManager : MonoBehaviour
   {
     [Header("Level Settings")] 
     [SerializeField] private int cristalTarget;
+    
+    [SerializeField] private Loader loader;
+    [SerializeField] private Menu menu;
 
     private void Start()
     {
@@ -26,14 +29,14 @@ namespace CodeBase._GAME
     
     public void Win()
     {
-      Loader.LoadSelectedScene(Constants.SCENE_Menu);
-      Menu.MenuUI(true);
-      Menu.GameUI(false);
+      loader.LoadSelectedScene(Constants.SCENE_Menu);
+      menu.MenuUI(true);
+      menu.GameUI(false);
     }
 
     public void Lose()
     {
-      Loader.LoadSelectedScene(Constants.SCENE_Game);
+      loader.LoadSelectedScene(Constants.SCENE_Game);
     }
   }
 }

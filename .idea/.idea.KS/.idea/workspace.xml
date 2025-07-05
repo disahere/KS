@@ -5,32 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1912ae2d-180c-4b66-8753-3605922c410b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Tool's/LogStyle.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/Tool's/LogStyle.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/UI.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/GameUI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/UI/GameUI.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/_GAME/CristalCollector.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/_GAME/CristalCollector.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/_GAME/DeadZone.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/_GAME/DeadZone.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/_GAME/GameManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/CodeBase/_GAME/GameManager.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.KS/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.KS/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/Game.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/Loader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/Loader.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/Manager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/Manager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/Menu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Infrastructure/Menu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Tool's/Constants.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Tool's/Constants.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Tool's/SmartDebug.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/Tool's/SmartDebug.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Tool's/LogStyle.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Tool's/LogStyle.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Tool's/SmartDebug.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/Tool's/SmartDebug.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/_GAME/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/_GAME/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/CodeBase/_GAME/JumpyTripline.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/_GAME/JumpyTripline.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeBase/_GAME/Move.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeBase/_GAME/Move.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Entity/Cristal.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Entity/Cristal.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/General's/[Manager].prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/General's/[Manager].prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/BootstrapScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/BootstrapScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/_GAME.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/_GAME.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-6000.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-6000.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,6 +128,7 @@
       <workItem from="1750529385807" duration="3352000" />
       <workItem from="1750615976307" duration="401000" />
       <workItem from="1750616407345" duration="2161000" />
+      <workItem from="1751738768665" duration="1424000" />
     </task>
     <servers />
   </component>

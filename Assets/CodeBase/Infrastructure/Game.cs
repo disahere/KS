@@ -1,14 +1,9 @@
-﻿using CodeBase.Tool_s;
+﻿using UnityEngine;
 
 namespace CodeBase.Infrastructure
 {
-  public class Game : Manager
+  public class Game : MonoBehaviour
   {
-    protected SmartDebug SmartDebug;
 
-    private void Awake()
-    {
-      SmartDebug = new SmartDebug();
-    }
   }
 }

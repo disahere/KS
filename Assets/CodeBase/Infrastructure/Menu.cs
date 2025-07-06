@@ -12,6 +12,9 @@ namespace CodeBase.Infrastructure
 
     [Header("Button's")] 
     [SerializeField] private Button startGame;
+    
+    [Space] [Header("Multiplayer")] [SerializeField] private Button multCreate;
+    [SerializeField] private Button multJoin;
 
     [Header("Loader's")]
     [SerializeField] private Loader loader;
@@ -32,6 +35,12 @@ namespace CodeBase.Infrastructure
           GameUI(true);
         }
       });
+    }
+
+    public void GameUI()
+    {
+      MenuUI(false);
+      GameUI(true);
     }
 
     public void MenuUI(bool isActive)

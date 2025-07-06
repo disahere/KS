@@ -1,11 +1,10 @@
 using _Code.Tools.SmartDebug;
-using CodeBase.Infrastructure;
 using CodeBase.Tool_s;
 using UnityEngine;
 
 namespace CodeBase._GAME
 {
-  public class JumpyTripline : Game
+  public class JumpyTripline : MonoBehaviour
   {
     [Header("General Settings")] [SerializeField]
     private float bounceForce = 10f;
